@@ -52,30 +52,7 @@ public class Query {
     public ArrayList<Player> getPlayers(Integer teamID) {
         ArrayList<Player> players = new ArrayList<>();
 
-        String qry = "select\n" +
-                "\tpers.PersonID,\n" +
-                "\tFirstName,\n" +
-                "\tLastName,\n" +
-                "\tNumber,\n" +
-                "\tHeightInches,\n" +
-                "\tWeightPounds,\n" +
-                "\tPosition,\n" +
-                "\tAcademicYear,\n" +
-                "\tHighSchool,\n" +
-                "\n" +
-                "\tpers.HomeTownID,\n" +
-                "\tloc.City HomeCity,\n" +
-                "\tloc.State HomeState,\n" +
-                "\tloc.Country HomeCountry\n" +
-                "from Player play\n" +
-                "     left join Person pers\n" +
-                "\t     on play.PersonID = pers.PersonID\n" +
-                "\tleft join Location loc\n" +
-                "\t\t on pers.HomeTownID = loc.LocationID\n" +
-                "\tleft join Team team\n" +
-                "\t\t on pers.TeamID = team.TeamID\n" +
-                "where pers.TeamID = ?";
-
+        String qry = "select * from v_player where TeamID = ?";
         try {
             PreparedStatement stmt = conn.prepareStatement(qry);
             stmt.setInt(1, teamID);
