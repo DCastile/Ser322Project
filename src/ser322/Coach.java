@@ -8,6 +8,11 @@ public class Coach extends Person {
         this.title = title;
     }
 
+    @Override
+    public String toString() {
+        return getLastName() + ", " + getFirstName() + " - " + getTitle();
+    }
+
     public String getTitle() {
         return title;
     }

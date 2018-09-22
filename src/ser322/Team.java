@@ -16,6 +16,10 @@ public class Team {
         this.longName = longName;
     }
 
+    @Override
+    public String toString() {
+        return getShortName() + " - " + getWins() + "-" + getLosses();
+    }
 
     public Integer getTeamID() {
         return teamID;
