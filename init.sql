@@ -643,7 +643,7 @@ CREATE TABLE Player
     HeightInches INTEGER,
     WeightPounds INTEGER,
     Position TEXT,
-    AcadmicYear TEXT,
+    AcademicYear TEXT,
     HighSchool TEXT
 );
 INSERT INTO Player (PersonID, Number, HeightInches, WeightPounds, Position, AcademicYear, HighSchool) VALUES (1, 79, 78, 340, 'OL', 'Fr.', 'Safford');
@@ -834,7 +834,6 @@ INSERT INTO Player (PersonID, Number, HeightInches, WeightPounds, Position, Acad
 INSERT INTO Player (PersonID, Number, HeightInches, WeightPounds, Position, AcademicYear, HighSchool) VALUES (186, 76, 76, 294, 'OL', 'R-Jr.', 'Folsom HS');
 INSERT INTO Player (PersonID, Number, HeightInches, WeightPounds, Position, AcademicYear, HighSchool) VALUES (187, 78, 76, 318, 'OL', 'Fr.', 'Oceanside HS');
 INSERT INTO Player (PersonID, Number, HeightInches, WeightPounds, Position, AcademicYear, HighSchool) VALUES (188, 80, 76, 222, 'TE', 'Fr.', 'Santa Margarita Catholic HS');
-INSERT INTO Player (PersonID, Number, HeightInches, WeightPounds, Position, AcademicYear, HighSchool) VALUES (189, 83, #VALUE!, 6-11, 'Fr.', '10-May', 'Lincoln HS');
 INSERT INTO Player (PersonID, Number, HeightInches, WeightPounds, Position, AcademicYear, HighSchool) VALUES (190, 84, 74, 203, 'WR', 'Fr.', 'San Diego HS');
 INSERT INTO Player (PersonID, Number, HeightInches, WeightPounds, Position, AcademicYear, HighSchool) VALUES (191, 85, 77, 231, 'TE', 'R-So.', 'Vista Murrieta HS');
 INSERT INTO Player (PersonID, Number, HeightInches, WeightPounds, Position, AcademicYear, HighSchool) VALUES (192, 94, 73, 339, 'DT', 'R-Jr.', 'Bishop Alemany HS');
