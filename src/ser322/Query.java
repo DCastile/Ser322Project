@@ -49,7 +49,7 @@ public class Query {
         return null;
     }
 
-    public ArrayList<Player> getPlayers(Integer teamID) {
+    public ArrayList<Player> getPlayersByTeam(Integer teamID) {
         ArrayList<Player> players = new ArrayList<>();
 
         String qry = "select * from v_player where TeamID = ?";
@@ -64,7 +64,24 @@ public class Query {
         } catch (SQLException se) {
             se.printStackTrace();
         }
+        return players;
+    }
 
+    public ArrayList<Player> getPlayersByState(String state) {
+        ArrayList<Player> players = new ArrayList<>();
+
+        String qry = "select * from v_player where HomeState = ?";
+        try {
+            PreparedStatement stmt = conn.prepareStatement(qry);
+            stmt.setString(1, state);
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                players.add(createPlayer(rs));
+            }
+        } catch (SQLException se) {
+            se.printStackTrace();
+        }
         return players;
     }
 }

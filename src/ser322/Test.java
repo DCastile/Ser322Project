@@ -9,7 +9,8 @@ public class Test {
 
         Query query = new Query();
 
-        ArrayList<Player> players = query.getPlayers(1);
+//        ArrayList<Player> players = query.getPlayersByTeam(1);
+        ArrayList<Player> players = query.getPlayersByState("CA");
 
         for (Player player : players) {
             System.out.println(player);
@@ -20,3 +21,4 @@ public class Test {
     }
 
 }
+
