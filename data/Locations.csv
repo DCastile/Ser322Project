@@ -1,0 +1,192 @@
+﻿LocationID,City,State,Country
+1,Geelong,Victoria,Australia
+2,Kingston,,Jamaica
+3,Lagos,Lagos,Nigeria
+4,Anchorage,AK,United States
+5,Madison,AL,United States
+6,Prichard,AL,United States
+7,Saraland,AL,United States
+8,Anthem,AZ,United States
+9,Buckeye,AZ,United States
+10,Chandler,AZ,United States
+11,Gilbert,AZ,United States
+12,Glendale,AZ,United States
+13,Goodyear,AZ,United States
+14,Litchfield Park,AZ,United States
+15,Mesa,AZ,United States
+16,Peoria,AZ,United States
+17,Phoenix,AZ,United States
+18,Queen Creek,AZ,United States
+19,Safford,AZ,United States
+20,Scottsdale,AZ,United States
+21,Tempe,AZ,United States
+22,Tucson,AZ,United States
+23,Yuma,AZ,United States
+24,Altadena,CA,United States
+25,Anaheim Hills,CA,United States
+26,Bakersfield,CA,United States
+27,Bellflower,CA,United States
+28,Calabasas,CA,United States
+29,Carson,CA,United States
+30,Cerritos,CA,United States
+31,Chino,CA,United States
+32,Claremont,CA,United States
+33,Clovis,CA,United States
+34,Concord,CA,United States
+35,Corona,CA,United States
+36,Coto de Caza,CA,United States
+37,Dana Point,CA,United States
+38,Danville,CA,United States
+39,Del Mar,CA,United States
+40,El Cerrito,CA,United States
+41,Folsom,CA,United States
+42,Fontana,CA,United States
+43,Fresno,CA,United States
+44,Gardena,CA,United States
+45,Glendora,CA,United States
+46,Granite Bay,CA,United States
+47,Harbor City,CA,United States
+48,Hayward,CA,United States
+49,Huntington Beach,CA,United States
+50,Inglewood,CA,United States
+51,Irvine,CA,United States
+52,Kingsburg,CA,United States
+53,La Cañada Flintridge,CA,United States
+54,La Habra,CA,United States
+55,La Jolla,CA,United States
+56,Lafayette,CA,United States
+57,Laguna Beach,CA,United States
+58,Laguna Hills,CA,United States
+59,Lancaster,CA,United States
+60,Larkspur,CA,United States
+61,Long Beach,CA,United States
+62,Los Alamitos,CA,United States
+63,Los Angeles,CA,United States
+64,Malibu,CA,United States
+65,Mission Hills,CA,United States
+66,Modesto,CA,United States
+67,Moreno Valley,CA,United States
+68,Murrieta,CA,United States
+69,Napa,CA,United States
+70,Newport Beach,CA,United States
+71,Norco,CA,United States
+72,Northridge,CA,United States
+73,Novato,CA,United States
+74,Oakland,CA,United States
+75,Oceanside,CA,United States
+76,Orange,CA,United States
+77,Oxnard,CA,United States
+78,Pacific Palisades,CA,United States
+79,Pasadena,CA,United States
+80,Pleasanton,CA,United States
+81,Rancho Cucamonga,CA,United States
+82,Rancho Santa Margarita,CA,United States
+83,Riverside,CA,United States
+84,Rocklin,CA,United States
+85,Roseville,CA,United States
+86,Sacramento,CA,United States
+87,San Clemente,CA,United States
+88,San Diego,CA,United States
+89,San Jose,CA,United States
+90,San Juan Capistrano,CA,United States
+91,San Marino,CA,United States
+92,Santa Ana,CA,United States
+93,Santa Rosa,CA,United States
+94,Simi Valley,CA,United States
+95,South El Monte,CA,United States
+96,South Pasadena,CA,United States
+97,Stockton,CA,United States
+98,Temecula,CA,United States
+99,Topanga,CA,United States
+100,Torrance,CA,United States
+101,Valencia,CA,United States
+102,Ventura,CA,United States
+103,Victorville,CA,United States
+104,West Covina,CA,United States
+105,West Los Angeles,CA,United States
+106,Westchester,CA,United States
+107,Woodland Hills,CA,United States
+108,Bunnell,FL,United States
+109,Miami,FL,United States
+110,Tampa,FL,United States
+111,Weston,FL,United States
+112,Atlanta,GA,United States
+113,Johns Creek,GA,United States
+114,Marietta,GA,United States
+115,Montezuma,GA,United States
+116,Suwanee,GA,United States
+117,Aiea,HI,United States
+118,Honolulu,HI,United States
+119,Liliha,HI,United States
+120,Pukalani,HI,United States
+121,Waianae,HI,United States
+122,Waipahu,HI,United States
+123,Elgin,IL,United States
+124,Evanston,IL,United States
+125,Highland Park,IL,United States
+126,Seneca,IL,United States
+127,Indianapolis,IN,United States
+128,Inver Grove Heights,MN,United States
+129,Ferguson,MO,United States
+130,St. Louis,MO,United States
+131,Henderson,NV,United States
+132,Las Vegas,NV,United States
+133,Corvallis,OR,United States
+134,Independence,OR,United States
+135,Portland,OR,United States
+136,Aledo,TX,United States
+137,Allen,TX,United States
+138,Argyle,TX,United States
+139,Austin,TX,United States
+140,Cibolo,TX,United States
+141,Dallas,TX,United States
+142,DeSoto,TX,United States
+143,El Paso,TX,United States
+144,Frisco,TX,United States
+145,Houston,TX,United States
+146,Katy,TX,United States
+147,League City,TX,United States
+148,Lubbock,TX,United States
+149,Lucas,TX,United States
+150,New Braunfels,TX,United States
+151,San Antonio,TX,United States
+152,Southlake,TX,United States
+153,Wylie,TX,United States
+154,Elk Ridge,UT,United States
+155,Layton,UT,United States
+156,Salt Lake City,UT,United States
+157,Washington D.C.,Washington D.C.,United States
+158,Appleton,WI,United States
+159,Burlington,WI,United States
+160,Milwaukee,WI,United States
+161,For Collins,CO,United States
+162,Greenwood Village,CO,United States
+163,Des Moines,IA,United States
+164,Baton Rouge,LA,United States
+165,Kaplan,LA,United States
+166,Many,LA,United States
+167,New Orleans,LA,United States
+168,Shreveport,LA,United States
+169,Villa,LA,United States
+170,Detroit,MI,United States
+171,Plymouth,MI,United States
+172,Saline,MI,United States
+173,Traverse City,MI,United States
+174,Jersey City,NJ,United States
+175,Mahwah,NJ,United States
+176,Montclair,NJ,United States
+177,Morristown,NJ,United States
+178,Mullica Hill,NJ,United States
+179,Roswell,NM,United States
+180,Lincoln,NE,United States
+181,Oklahoma City,OK,United States
+182,Chester,PA,United States
+183,Murfreesboro,TN,United States
+184,Fagatogo,American Samoa,United States
+185,Pago Pago,American Samoa,United States
+186,Chesapeake,VA,United States
+187,Gainesville,VA,United States
+188,Leesburg,VA,United States
+189,Kirkland,WA,United States
+190,Vancouver,WA,United States
+191,Melbourne,Australia,Victoria

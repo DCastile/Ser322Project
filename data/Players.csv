@@ -1,0 +1,334 @@
+﻿PersonID,Number,HeightInches,WeightPounds,Position,AcadmicYear,HighSchool
+1,79,78,340,OL,Fr.,Safford
+2,9,75,177,QB,So.,Chaparral
+3,10,74,177,DB,R-Fr.,Saguaro
+4,14,76,193,QB,R-Fr.,Basha
+5,23,73,217,LB,R-Sr.,Chaparral
+6,24,73,175,RB,R-So.,Chandler
+7,28,71,170,WR,Fr.,Sunrise Mountain
+8,32,71,172,DB,R-Jr.,Mountain Pointe
+9,34,75,214,LB,R-Fr.,Saguaro
+10,36,71,177,DB,Fr.,Desert Vista
+11,41,76,258,DL,R-Fr.,Highland
+12,44,71,215,P,Jr.,Dobson
+13,45,68,161,PK,R-Fr.,Perry
+14,46,73,164,DB,R-Fr.,Northwest Christian
+15,47,73,198,DB,Fr.,Centennial
+16,55,78,315,OL,Gr.,Hamilton
+17,57,75,277,DL,R-Sr.,Chandler
+18,59,78,323,OL,R-Sr.,Higley
+19,60,79,288,OL,R-Fr.,Ironwood Ridge
+20,61,73,199,LS,R-Fr.,Verrado
+21,61,76,301,OL,Fr.,Dobson
+22,62,76,312,OL,R-Fr.,Tempe Prep
+23,68,74,228,OLB,R-Fr.,Marcos de Niza
+24,69,74,263,OL,R-Fr.,Westwood
+25,70,78,308,OL,R-So.,Higley
+26,71,76,333,OL,R-Jr.,Gilbert
+27,72,75,296,OL,R-Jr.,Williams Field
+28,74,75,278,OL,So.,Saguaro
+29,80,78,251,TE,R-Fr.,Cibola
+30,86,80,221,WR,So.,Mountain View
+31,89,75,211,TE,Fr.,Chandler
+32,92,75,225,TE,R-Fr.,Cactus Shadows
+33,92,74,289,DL,So.,Mesa
+34,93,73,217,LS,Jr.,Chaparral
+35,94,70,176,K,Fr.,Saguaro
+36,98,76,325,DL,R-Fr.,Desert Ridge
+37,1,76,213,WR,Jr.,Chandler
+38,1,70,174,PK,So.,Williams Field
+39,37,71,232,LB,Fr.,Narbonne
+40,2,73,195,WR,Jr.,McQueen
+41,5,75,200,QB,R-Sr.,San Marin
+42,5,70,169,DB,Jr.,Long Beach Poly
+43,7,73,185,QB,Fr.,Cardinal Newman
+44,8,75,235,LB,Fr.,Junipero Serro
+45,9,75,243,LB,Sr.,Valencia
+46,10,71,182,WR,Jr.,Murrieta
+47,13,71,184,DB,Jr.,Los Alamitos
+48,16,74,190,QB,Fr.,Gregori
+49,16,73,190,S,Fr.,Long Beach Poly
+50,19,74,189,P,R-Fr.,Saint Francis
+51,20,73,230,LB,R-Jr.,Etiwanda
+52,26,73,180,WR,Fr.,Scripps Ranch
+53,28,73,199,DB,Sr.,Los Alamitos
+54,30,73,208,DB,R-Sr.,De La Salle
+55,31,67,185,RB,R-So.,Foothill
+56,39,73,228,LB,R-Jr.,Chaparral
+57,43,73,198,S,R-Sr.,El Cerrito
+58,48,73,190,S,Fr.,Bishop Alemany
+59,50,77,295,OL,Fr.,Norco
+60,51,78,336,OL,R-Jr.,Saint John Bosco
+61,52,73,209,OLB,Fr.,Calabasas
+62,56,75,294,OL,R-Jr.,Mater Dei
+63,58,77,284,OL,R-Sr.,Buena
+64,63,78,335,OL,R-Jr.,Winward
+65,64,75,300,OL,Fr.,Don Lugo
+66,73,77,291,OL,Jr.,Los Osos
+67,83,74,180,WR,Fr.,Etiwanda
+68,85,76,184,WR,Fr.,Hamilton
+69,87,77,247,TE,R-Jr.,Archbishop Mitty
+70,88,76,245,TE,Sr.,#VALUE!
+71,90,74,270,DL,Fr.,Long Beach Poly
+72,76,79,303,OL,Fr.,Rocky Mountain
+73,25,69,182,DB,Fr.,St. Thomas Aquinas
+74,99,77,252,DL,R-Sr.,Flagler-Palm Coast
+75,14,71,209,WR,R-Sr.,Lassiter
+76,3,73,172,DB,R-Sr.,Saint Louis
+77,58,71,225,LB,R-So.,Kaiser
+78,90,73,223,TE,Sr.,Kaiser
+79,99,73,6/18,WR,Fr.,Kamehameha Maui
+80,99,75,6/28,WR,R-Fr.,Westminster Christian
+81,8,73,212,QB,R-So.,Dowling
+82,19,76,193,WR,R-Jr.,Central
+83,29,73,223,RB,Fr.,Many
+84,45,75,275,DL,R-Jr.,Landry-Walker
+85,96,76,242,DL,R-Jr.,Kaplan
+86,97,74,304,DL,So.,Southern Lab
+87,4,75,215,LB,R-Sr.,Cleveland NJROTC
+88,95,78,297,DL,R-Sr.,Lutheran
+89,2,77,257,DL,R-Jr.,Montclair
+90,22,70,218,FB,R-Sr.,Pennsville Memorial
+91,84,73,192,WR,R-So.,Lincoln
+92,91,75,201,WR,R-So.,Mahwah
+93,12,73,200,DB,R-Jr.,Goddard
+94,81,77,238,TE,R-So.,Lincoln Christian
+95,6,73,194,DB,So.,Midwest City
+96,56,73,218,LB,R-Fr.,Blackman
+97,3,70,201,RB,So.,Wylie East
+98,7,71,190,CB,Jr.,Blinn College
+99,12,71,178,WR,R-Jr.,Clear Falls
+100,14,76,215,OLB,Fr.,John Marshall
+101,15,73,170,S,Fr.,Clear Lake
+102,15,75,222,QB,R-So.,Westfield
+103,17,69,178,WR,R-Jr.,Aledo
+104,18,70,180,CB,So.,Clear Springs
+105,22,73,221,LB,R-Jr.,Argyle
+106,25,69,189,RB,So.,Cy Ridge HS
+107,25,73,220,P,So.,Ridge Point
+108,26,71,189,S,So.,Cooper
+109,32,68,182,RB,Fr.,Southlake Carroll
+110,35,70,200,RB,Fr.,Allen
+111,50,73,216,LB,Sr.,Plano East
+112,91,74,230,DE,Fr.,Katy
+113,43,73,183,PK,R-Sr.,New Braunfels
+114,36,73,208,P,R-Jr.,St. Joseph's College
+115,21,71,179,CB,R-So.,San Francisco City College
+116,66,78,288,OL,So.,Columbia River
+117,64,70,215,LS,R-So.,Appleton East
+118,51,75,199,LB,R-Jr.,Burlington
+119,99,74,306,DT,R-Sr.,Lakeland HS
+120,11,73,205,S,So.,Mobile Christian HS
+121,1,75,210,WR,R-Fr.,Sabino HS
+122,4,73,201,QB,So.,Catalina Foothills HS
+123,10,71,189,CB,R-Jr.,Hamilton HS
+124,10,73,210,QB,Fr.,Cienega HS
+125,13,73,197,QB,Fr.,Arcadia HS
+126,16,75,221,P,Gr.,Thunderbird HS
+127,19,77,218,WR,R-Sr.,Centennial HS
+128,26,77,220,P/WR,R-Jr.,Ciengea HS
+129,32,74,211,WR,R-Jr.,Cienega HS
+130,38,68,213,RB,R-Jr.,Estrella Foothills HS
+131,47,74,204,S,R-Fr.,Desert Mountain HS
+132,48,71,222,LB,R-Fr.,Chandler HS
+133,49,76,230,STUD,R-Fr.,Desert Ridge HS
+134,50,75,292,OL,R-So.,Red Mountain HS
+135,51,70,248,LS,R-So.,Brophy Prep
+136,55,69,221,LB,R-Fr.,Brophy College Prep
+137,56,73,241,LS,R-Sr.,Notre Dame Prep
+138,58,77,297,OL,R-Sr.,Centennial HS
+139,59,76,227,DE,R-Fr.,Tempe HS
+140,63,75,318,OL,Jr.,Peoria Centennial HS
+141,64,75,292,OL,R-Jr.,Boulder Creek HS
+142,67,77,307,OL,Fr.,Amphitheater HS
+143,73,76,286,OL,R-Fr.,Peoria HS
+144,79,75,292,OL,R-Fr.,Queen Creek High School
+145,82,73,246,STUD,R-Fr.,Desert Edge HS
+146,86,69,172,WR,R-Fr.,Orange Lutheran HS(Calif.)
+147,90,73,278,DT,R-Sr.,Mountain View HS
+148,91,77,301,DT,R-Jr.,Campo Verde HS
+149,6,74,209,S,Sr.,Mountain View HS
+150,2,70,181,CB,R-So.,Linfield Christian HS
+151,5,73,210,WR,So.,Charter Oak HS
+152,7,70,175,WR,R-So.,Narbonne HS
+153,7,73,236,LB,So.,Mission Viejo HS
+154,9,71,189,WR,R-Sr.,Granite Bay HS
+155,12,75,263,DE,So.,Long Beach Poly HS
+156,13,71,194,S,Jr.,Centennial HS
+157,14,74,215,QB,Jr.,Junipero Serra HS
+158,14,74,248,STUD,So.,Notre Dame HS
+159,15,73,178,CB,Fr.,Edison HS
+160,17,74,179,QB,R-Fr.,Cathedral HS
+161,17,71,189,CB,Sr.,Oceanside HS
+162,18,71,193,WR,R-Jr.,Rancho Verde HS
+163,19,71,195,S,So.,Helix HS
+164,20,73,193,CB,R-Fr.,Oceanside HS
+165,21,73,191,S,R-So.,Calabasas HS
+166,21,66,184,RB,R-So.,Centennial HS
+167,24,73,185,S,R-Fr.,Cathedral HS
+168,25,70,212,RB,R-Jr.,Liberty HS
+169,26,73,225,LB,So.,Narbonne HS
+170,28,71,195,RB,Fr.,Bishop Alemany HS
+171,33,74,202,RB,So.,Colony HS
+172,34,73,226,LB,R-So.,La Habra HS
+173,36,73,207,S,R-Jr.,Stellar Prep
+174,37,74,196,S,R-Fr.,Mater Dei HS
+175,42,75,229,P,Gr.,Crespi HS
+176,43,74,184,K,So.,Norco HS
+177,44,73,291,DT,So.,Liberty HS
+178,45,73,235,LB,Fr.,Los Alamitos HS
+179,51,73,243,STUD,Jr.,Rancho Verde HS
+180,52,76,335,DT,R-Jr.,Luther Burbank HS
+181,53,73,222,LB,R-So.,Buchanan HS
+182,54,76,306,OT,R-So.,Great Oak HS
+183,58,74,270,DT,Fr.,Calabasas HS
+184,60,75,337,DL,Fr.,Calabasas HS
+185,74,76,292,OL,R-Jr.,Redwood HS
+186,76,76,294,OL,R-Jr.,Folsom HS
+187,78,76,318,OL,Fr.,Oceanside HS
+188,80,76,222,TE,Fr.,Santa Margarita Catholic HS
+189,83,#VALUE!,6-11,Fr.,10-May,Lincoln HS
+190,84,74,203,WR,Fr.,San Diego HS
+191,85,77,231,TE,R-So.,Vista Murrieta HS
+192,94,73,339,DT,R-Jr.,Bishop Alemany HS
+193,66,75,315,OL,R-Fr.,IMG Academy [Fla.]
+194,35,73,212,CB,Fr.,IMG Academy
+195,11,73,222,QB,R-Fr.,Macon County HS
+196,82,75,224,TE,Fr.,Johns Creek HS
+197,75,75,323,OT,R-So.,Kaiser HS
+198,30,70,184,K/P,Gr.,Highland Park HS
+199,3,73,180,S,R-So.,John Ehret HS
+200,4,70,204,CB,R-So.,East St. John HS
+201,6,70,188,WR,Sr.,Calvary Baptist Academy
+202,8,71,195,CB,Gr.,Desert Pines HS
+203,70,77,308,OL,R-So.,DePaul Catholic
+204,81,75,263,DE,R-So.,Canton HS
+205,81,75,252,TE,So.,Saline HS
+206,87,74,189,WR,Fr.,Hun HS
+207,1,73,230,LB,So.,"Desert Pines, HS"
+208,23,73,174,CB,R-Fr.,Bishop Gorman
+209,72,77,287,OL,R-Fr.,Desert Pines HS
+210,86,75,259,DE,R-Jr.,Coronado HS
+211,23,73,206,RB,So.,St. Frances Academy
+212,5,73,209,S,Fr.,Foster HS
+213,9,74,216,S,Fr.,West Mesquite HS
+214,16,69,187,WR,Fr.,St. Pius X HS
+215,20,69,175,RB,Fr.,Dawson HS
+216,31,73,194,S,Jr.,Andress HS
+217,33,71,184,S,R-Fr.,Lovejoy HS
+218,66,71,213,LS,Fr.,Wimberley HS
+219,88,75,190,WR,Fr.,Wakeland HS
+220,89,70,194,WR,Fr.,St. Pius X HS
+221,71,74,300,DL,R-Jr.,Tafuna HS
+222,27,70,177,CB,R-Jr.,Gonzaga College HS
+223,40,74,204,WR,R-So.,Radford HS
+224,53,76,301,OL,R-So.,The Taft School
+225,12,75,210,QB,Fr.,St. John's College HS
+226,91,76,325,DL,So.,Westview (OR)
+227,1,73,190,WR,R-So.,"Saraland, AL"
+228,52,73,220,ILB,Fr.,St. John Bosco
+229,36,77,210,P,R-Sr.,San Francisco CC
+230,21,76,200,S,R-Fr.,Mountain Pointe HS
+231,26,73,200,WR,Fr.,Saguaro HS
+232,64,77,320,OT,Fr.,Red Mountain HS
+233,73,78,305,OT,So.,North Canyon
+234,90,79,260,DL,Jr.,Brophy Prep
+235,2,76,205,WR,Fr.,Antelope Valley HS
+236,4,73,180,CB,Fr.,Mission Viejo HS
+237,4,71,170,QB,Fr.,La Jolla HS
+238,6,76,215,WR,Jr.,Oaks Christian
+239,6,74,205,CB,Fr.,Helix HS
+240,7,73,205,TB,So.,Summit
+241,7,74,195,S,Sr.,Crespi
+242,8,73,205,CB,Sr.,Long Beach Poly
+243,8,73,195,WR,Fr.,Mater Dei
+244,9,71,190,CB,R-Fr.,Hawkins
+245,10,75,220,ILB,R-Jr.,Serra
+246,10,75,205,QB,R-Fr.,San Clemente
+247,13,76,215,QB,Fr.,Oaks Christian
+248,13,71,170,WR,R-So.,Bishop Amat
+249,16,69,190,CB-TB,R-Jr.,Bishop Alemany
+250,16,78,200,QB,R-So.,Brentwood HS
+251,17,74,190,CB,Fr.,Roosevelt HS
+252,18,75,210,QB,Fr.,Mater Dei
+253,18,74,230,ILB,Fr.,Narbonne HS
+254,19,75,200,QB,R-So.,Glendora
+255,21,74,185,WR,R-So.,Bishop Amat
+256,23,71,180,CB,R-Sr.,Mater Dei
+257,24,73,175,CB,Sr.,Foothill
+258,24,71,175,WR,R-Jr.,San Clemente
+259,27,70,185,CB,R-Sr.,Crenshaw
+260,28,73,190,S,R-So.,Serra
+261,30,71,200,S,Fr.,Loyola HS
+262,31,77,240,OLB,R-Fr.,Cathedral
+263,31,73,195,S,R-So.,Bishop's School
+264,34,74,190,WR,R-Fr.,Brentwood
+265,35,74,250,ILB,Sr.,Granite Bay
+266,36,73,185,WR,R-Fr.,Loyola
+267,37,70,210,S,R-Sr.,St. Bonaventure
+268,39,73,210,SNP,Fr.,Loyola HS
+269,39,73,235,TB,R-Fr.,Cathedral HS
+270,40,70,205,TB,Jr.,Liberty HS
+271,40,73,195,PK,So.,Mater Dei
+272,42,76,240,OLB,Fr.,JSerra Catholic HS
+273,44,74,280,DL,R-Sr.,St. John Bosco
+274,46,71,185,P,R-Sr.,St. John Bosco
+275,47,76,185,P,R-Sr.,Dana Hills
+276,47,73,230,ILB-FB,R-Sr.,Loyola
+277,49,73,215,ILB,R-Jr.,St. Francis
+278,49,73,195,PK,R-So.,Linfield Christian
+279,50,75,295,C-OT,R-Sr.,La Habra
+280,51,78,290,OT,R-So.,Lakewood HS
+281,52,76,315,OG,R-Jr.,Clovis North
+282,53,75,225,ILB,R-Fr.,Bishop Montgomery
+283,54,77,310,OT,R-Fr.,Clayton Valley
+284,56,77,290,OG,R-Sr.,Claremont
+285,57,74,290,C,Fr.,Chaparral HS
+286,58,75,240,ILB,Fr.,Mater Dei
+287,59,73,230,ILB,R-Sr.,Palisades Charter
+288,59,73,205,SNP,R-So.,Citrus JC
+289,61,75,225,SNP,R-Jr.,Orange Lutheran
+290,62,74,295,C,R-Fr.,Santa Margarita
+291,65,76,300,OG,R-So.,Mater Dei
+292,67,75,260,C,Fr.,Laguna Hills HS
+293,68,77,290,OT,Fr.,Harvard Westlake HS
+294,72,78,315,OG-OT,So.,Kingsburg
+295,75,76,310,OG-OT,R-Fr.,Bishop O'Dowd
+296,76,77,295,OT,R-Jr.,Servite
+297,77,77,310,OG,R-Sr.,Loyola
+298,82,76,250,TE,Sr.,Campolindo
+299,83,78,230,TE,So.,Inderkum
+300,84,77,255,TE,So.,Monte Vista
+301,89,76,275,DL,R-Jr.,Loyola
+302,93,76,290,DL,R-So.,Huntington Beach
+303,96,77,270,DL,Jr.,Vintage HS
+304,85,71,170,WR,R-So.,Miami Senior
+305,97,77,270,DL,R-Fr.,Cypress Bay
+306,17,74,215,WR,R-So.,North Gwinnett
+307,70,76,295,OT,Sr.,McEachern
+308,88,75,240,TE,R-Jr.,Florida
+309,26,74,240,OLB,Fr.,Waianae HS
+310,29,73,215,TB,R-So.,Mililani
+311,56,74,230,ILB-OLB,Jr.,St. Louis
+312,37,70,205,TB,R-Fr.,Evanston
+313,89,78,250,TE,R-Sr.,McKendree
+314,30,73,230,TB,Fr.,Cathedral HS
+315,99,75,240,OLB,Jr.,
+316,81,75,205,HLD-SNP,R-Sr.,St. Thomas Academy
+317,95,76,310,DL,Fr.,Chaminade College Prep
+318,1,74,250,ILB,Fr.,Bishop Gorman HS
+319,2,75,200,S,So.,Bishop Gorman
+320,87,76,205,WR,So.,Desert Pines
+321,15,73,215,S,Fr.,Crescent Valley HS
+322,34,75,235,OLB,Fr.,Central Catholic HS
+323,51,75,305,DL,R-Fr.,Central
+324,41,76,230,OLB,So.,Leone
+325,13,75,220,ILB-OLB,So.,Westlake
+326,15,73,200,PK,R-Jr.,Episcopal School of Dallas
+327,28,73,205,TB,Sr.,Cedar Hill
+328,38,69,195,TB,R-So.,Clemens
+329,38,74,195,PK,Fr.,Vandergrift HS
+330,45,77,260,OLB,Sr.,Salem Hills
+331,54,74,230,ILB,R-Fr.,Layton
+332,78,75,310,DL,R-Fr.,Bingham
+333,44,70,180,WR,R-Jr.,Waukesha
