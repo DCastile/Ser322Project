@@ -86,11 +86,13 @@ public class GUI extends JPanel implements ActionListener {
                 break;
             }
             case "coaches_by_team": {
-                tableModel = new CoachTableModel(query.getCoachesByTeam(1));
+                queryParameter = getInputFromDiaglogBox("Enter team id");
+                tableModel = new CoachTableModel(query.getCoachesByTeam(Integer.parseInt(queryParameter)));
                 break;
             }
             case "players_by_team": {
-                tableModel = new PlayerTableModel(query.getPlayersByTeam(1));
+                queryParameter = getInputFromDiaglogBox("Enter team id");
+                tableModel = new PlayerTableModel(query.getPlayersByTeam(Integer.parseInt(queryParameter)));
                 break;
             }
             case "players_by_state": {
