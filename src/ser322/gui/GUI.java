@@ -4,6 +4,7 @@ package ser322.gui;
 import ser322.backend.Query;
 
 import javax.swing.*;
+import javax.swing.table.AbstractTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -22,7 +23,7 @@ public class GUI extends JPanel implements ActionListener {
 
     private JScrollPane scrollPane;
     private JTable table;
-    private RosterTableModel tableModel;
+    private AbstractTableModel tableModel;
 
     public GUI() {
         super(new GridBagLayout());
@@ -73,28 +74,27 @@ public class GUI extends JPanel implements ActionListener {
 
         switch (e.getActionCommand()) {
             case "all_teams": {
-                tableModel.setDataFromTeams(query.getTeams());
+                tableModel = new TeamTableModel(query.getTeams());
                 break;
             }
             case "teams_by_state": {
-                tableModel.setDataFromTeams(query.getTeamByState("GA"));
+                tableModel = new TeamTableModel(query.getTeamByState("GA"));
                 break;
             }
             case "coaches_by_team": {
-                tableModel.setDataFromCoaches(query.getCoachesByTeam(1));
+                tableModel = new CoachTableModel(query.getCoachesByTeam(1));
                 break;
             }
             case "players_by_team": {
-                tableModel.setDataFromPlayers(query.getPlayersByTeam(1));
+                tableModel = new PlayerTableModel(query.getPlayersByTeam(1));
                 break;
             }
             case "players_by_state": {
-                tableModel.setDataFromPlayers(query.getPlayersByState("GA"));
+                tableModel = new PlayerTableModel(query.getPlayersByState("GA"));
                 break;
             }
         }
-        tableModel.fireTableDataChanged();
-
+        table.setModel(tableModel);
     }
 
 
@@ -105,14 +105,11 @@ public class GUI extends JPanel implements ActionListener {
 
         Query query = new Query();
 
-//        table = new JTable(new TeamTableModel(query.getTeams()));
-        tableModel = new RosterTableModel();
-        tableModel.setDataFromTeams(query.getTeams());
+        tableModel = new TeamTableModel(query.getTeams());
         table = new JTable(tableModel);
 
 
-
-        table.setPreferredScrollableViewportSize(new Dimension(1000, 300));
+        table.setPreferredScrollableViewportSize(new Dimension(800, 200));
         table.setFillsViewportHeight(true);
 
         //Create the scroll pane and add the table to it.
