@@ -10,6 +10,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
+
+
 public class GUI extends JPanel implements ActionListener {
     private boolean DEBUG = false;
 
@@ -72,13 +74,15 @@ public class GUI extends JPanel implements ActionListener {
         System.out.println(e.getActionCommand());
         Query query = new Query();
 
+        String queryParameter;
         switch (e.getActionCommand()) {
             case "all_teams": {
                 tableModel = new TeamTableModel(query.getTeams());
                 break;
             }
             case "teams_by_state": {
-                tableModel = new TeamTableModel(query.getTeamByState("GA"));
+                queryParameter = getInputFromDiaglogBox("Enter state");
+                tableModel = new TeamTableModel(query.getTeamByState(queryParameter));
                 break;
             }
             case "coaches_by_team": {
@@ -90,11 +94,24 @@ public class GUI extends JPanel implements ActionListener {
                 break;
             }
             case "players_by_state": {
-                tableModel = new PlayerTableModel(query.getPlayersByState("GA"));
+                queryParameter = getInputFromDiaglogBox("Enter state");
+                tableModel = new PlayerTableModel(query.getPlayersByState(queryParameter));
                 break;
             }
         }
+
         table.setModel(tableModel);
+    }
+
+    private String getInputFromDiaglogBox(String message) {
+        return (String)JOptionPane.showInputDialog(
+                this,
+                message,
+                "Enter parameter for query",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                null,
+                "type here...");
     }
 
 
@@ -108,8 +125,10 @@ public class GUI extends JPanel implements ActionListener {
         tableModel = new TeamTableModel(query.getTeams());
         table = new JTable(tableModel);
 
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
 
-        table.setPreferredScrollableViewportSize(new Dimension(800, 200));
+
+        table.setPreferredScrollableViewportSize(new Dimension(1000, 300));
         table.setFillsViewportHeight(true);
 
         //Create the scroll pane and add the table to it.
