@@ -22,11 +22,14 @@ public class GUI extends JPanel implements ActionListener {
 
     private JScrollPane scrollPane;
     private JTable table;
+    private RosterTableModel tableModel;
 
     public GUI() {
         super(new GridBagLayout());
 
         registerButtons();
+
+        initTable();
 
 
     }
@@ -66,52 +69,47 @@ public class GUI extends JPanel implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println(e.getActionCommand());
+        Query query = new Query();
+
         switch (e.getActionCommand()) {
             case "all_teams": {
-                placeTable("team");
+                tableModel.setDataFromTeams(query.getTeams());
                 break;
             }
             case "teams_by_state": {
-                placeTable("team");
+                tableModel.setDataFromTeams(query.getTeamByState("GA"));
                 break;
             }
             case "coaches_by_team": {
-                placeTable("coach");
+                tableModel.setDataFromCoaches(query.getCoachesByTeam(1));
                 break;
             }
             case "players_by_team": {
-                placeTable("player");
+                tableModel.setDataFromPlayers(query.getPlayersByTeam(1));
                 break;
             }
             case "players_by_state": {
-                placeTable("player");
+                tableModel.setDataFromPlayers(query.getPlayersByState("GA"));
                 break;
             }
         }
+        tableModel.fireTableDataChanged();
+
     }
 
 
-    private void placeTable(String type) {
+    private void initTable() {
         GridBagConstraints c = new GridBagConstraints();
         c.gridy = 2;
         c.gridwidth = 5;
 
         Query query = new Query();
 
-        switch (type) {
-            case "team" : {
-                table = new JTable(new PlayerTableModel(query.getPlayersByState("GA")));
-                break;
-            }
-            case "coach": {
-                table = new JTable(new CoachTableModel(query.getCoachesByTeam(1)));
-                break;
-            }
-            case "player": {
-                table = new JTable(new TeamTableModel(query.getTeams()));
-                break;
-            }
-        }
+//        table = new JTable(new TeamTableModel(query.getTeams()));
+        tableModel = new RosterTableModel();
+        tableModel.setDataFromTeams(query.getTeams());
+        table = new JTable(tableModel);
+
 
 
         table.setPreferredScrollableViewportSize(new Dimension(1000, 300));
