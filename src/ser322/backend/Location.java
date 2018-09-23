@@ -1,4 +1,4 @@
-package ser322;
+package ser322.backend;
 
 public class Location {
     private Integer locationID;

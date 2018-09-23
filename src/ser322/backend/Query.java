@@ -1,4 +1,4 @@
-package ser322;
+package ser322.backend;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -28,6 +28,7 @@ public class Query {
     private Player createPlayer(ResultSet rs){
         Player player;
         Location loc;
+        Team team;
         try {
             player = new Player(rs.getInt("PersonID"), rs.getString("FirstName"), rs.getString("LastName"));
             player.setNumber(rs.getInt("Number"));
@@ -38,8 +39,10 @@ public class Query {
             player.setHighSchool(rs.getString("HighSchool"));
 
             loc = new Location(rs.getInt("HomeTownID"), rs.getString("HomeCity"), rs.getString("HomeState"), rs.getString("HomeCountry"));
-
             player.setHomeTown(loc);
+
+            team = new Team(rs.getInt("TeamID"), rs.getString("ShortName"));
+            player.setTeam(team);
 
             return player;
         }
@@ -127,7 +130,8 @@ public class Query {
         Team team;
         Location loc;
         try {
-            team = new Team(rs.getInt("TeamID"), rs.getString("ShortName"), rs.getString("Name"));
+            team = new Team(rs.getInt("TeamID"), rs.getString("ShortName"));
+            team.setLongName(rs.getString("Name"));
             team.setWins(rs.getInt("Wins"));
             team.setLosses(rs.getInt("Losses"));
             team.setChampionships(rs.getInt("Championships"));

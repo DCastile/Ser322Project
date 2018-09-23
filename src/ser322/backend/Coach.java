@@ -1,4 +1,6 @@
-package ser322;
+package ser322.backend;
+
+import ser322.backend.Person;
 
 public class Coach extends Person {
     private String title;

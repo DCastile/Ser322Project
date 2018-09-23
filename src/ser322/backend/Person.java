@@ -1,4 +1,4 @@
-package ser322;
+package ser322.backend;
 
 public class Person {
     private Integer personID;
@@ -16,6 +16,11 @@ public class Person {
     }
 
 
+
+    public String getName() {
+        return firstName + " " + lastName;
+    }
+
     public Integer getPersonID() {
         return personID;
     }
@@ -29,16 +34,16 @@ public class Person {
     }
 
 
-    public Location getHomeTown() {
-        return homeTown;
+    public String getHomeTown() {
+        return homeTown.getCity() + ", " + homeTown.getState() + ", " + homeTown.getCountry();
     }
 
     public void setHomeTown(Location homeTown) {
         this.homeTown = homeTown;
     }
 
-    public Team getTeam() {
-        return team;
+    public String getTeam() {
+        return team.getShortName();
     }
 
     public void setTeam(Team team) {

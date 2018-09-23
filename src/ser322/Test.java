@@ -1,5 +1,7 @@
 package ser322;
 
+import ser322.backend.Query;
+
 import java.util.ArrayList;
 
 public class Test {

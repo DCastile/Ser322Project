@@ -1,4 +1,4 @@
-package ser322;
+package ser322.backend;
 
 public class Team {
     private Integer teamID;
@@ -10,10 +10,9 @@ public class Team {
     private Integer championships;
     private Location  location;
 
-    public Team(Integer teamID, String shortName, String longName) {
+    public Team(Integer teamID, String shortName) {
         this.teamID = teamID;
         this.shortName = shortName;
-        this.longName = longName;
     }
 
     @Override
@@ -31,6 +30,10 @@ public class Team {
 
     public String getLongName() {
         return longName;
+    }
+
+    public void setLongName(String longName) {
+        this.longName = longName;
     }
 
     public Integer getWins() {
