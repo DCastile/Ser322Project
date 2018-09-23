@@ -1,4 +1,4 @@
-package ser322;
+package ser322.backend;
 
 import ser322.backend.Query;
 
