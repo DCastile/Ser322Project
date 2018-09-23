@@ -1,41 +1,33 @@
 package ser322.gui;
 
-import ser322.backend.Player;
+import ser322.backend.Coach;
 
 import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
 import java.util.Vector;
 
-public class PlayerTableModel extends AbstractTableModel {
+public class CoachTableModel extends AbstractTableModel {
 
     private Vector<String> columnNames = new Vector<>();
     private Vector<Vector<String>> data;
 
-    PlayerTableModel(ArrayList<Player> rows) {
+    CoachTableModel(ArrayList<Coach> rows) {
         super();
 
-        System.out.println("Player!");
+        System.out.println("Coach!");
 
         columnNames.add("Team");
         columnNames.add("Name");
-        columnNames.add("Number");
-        columnNames.add("Height");
-        columnNames.add("Weight");
-        columnNames.add("Position");
-        columnNames.add("Academic Year");
+        columnNames.add("Title");
         columnNames.add("Home Town");
 
         data = new Vector<Vector<String>>();
-        for (Player player : rows) {
+        for (Coach coach : rows) {
             Vector<String> row = new Vector<>();
-            row.add(player.getTeam());
-            row.add(player.getName());
-            row.add(String.valueOf(player.getNumber()));
-            row.add(player.getHeight());
-            row.add(String.valueOf(player.getWeightPounds()));
-            row.add(player.getPosition());
-            row.add(player.getAcademicYear());
-            row.add(player.getHomeTown());
+            row.add(coach.getTeam());
+            row.add(coach.getName());
+            row.add(coach.getTitle());
+            row.add(coach.getHomeTown());
 
             data.add(row);
         }

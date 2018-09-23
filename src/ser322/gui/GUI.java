@@ -20,7 +20,11 @@ public class GUI extends JPanel {
         Query query = new Query();
 
 
-        JTable table = new JTable(new PlayerTableModel(query.getPlayersByState("GA")));
+//        JTable table = new JTable(new PlayerTableModel(query.getPlayersByState("GA")));
+//        JTable table = new JTable(new CoachTableModel(query.getCoachesByTeam(1)));
+        JTable table = new JTable(new TeamTableModel(query.getTeams()));
+
+
         table.setPreferredScrollableViewportSize(new Dimension(1000, 300));
         table.setFillsViewportHeight(true);
 

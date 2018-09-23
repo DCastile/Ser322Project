@@ -41,7 +41,7 @@ public class Query {
             loc = new Location(rs.getInt("HomeTownID"), rs.getString("HomeCity"), rs.getString("HomeState"), rs.getString("HomeCountry"));
             player.setHomeTown(loc);
 
-            team = new Team(rs.getInt("TeamID"), rs.getString("ShortName"));
+            team = new Team(rs.getInt("TeamID"), rs.getString("Team"));
             player.setTeam(team);
 
             return player;
@@ -93,10 +93,14 @@ public class Query {
     private Coach createCoach(ResultSet rs) {
         Coach coach;
         Location loc;
+        Team team;
         try {
             coach = new Coach(rs.getInt("PersonID"), rs.getString("FirstName"), rs.getString("LastName"), rs.getString("Title"));
             loc = new Location(rs.getInt("HomeTownID"), rs.getString("HomeCity"), rs.getString("HomeState"), rs.getString("HomeCountry"));
             coach.setHomeTown(loc);
+
+            team = new Team(rs.getInt("TeamID"), rs.getString("Team"));
+            coach.setTeam(team);
 
             return coach;
         }

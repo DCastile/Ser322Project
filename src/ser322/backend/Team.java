@@ -60,8 +60,8 @@ public class Team {
         this.championships = championships;
     }
 
-    public Location getLocation() {
-        return location;
+    public String getLocation() {
+        return location.getCity() + ", " + location.getState() + ", " + location.getCountry();
     }
 
     public void setLocation(Location location) {
