@@ -2,6 +2,8 @@ package ser322.backend;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Query {
 
@@ -51,6 +53,44 @@ public class Query {
         }
         return null;
     }
+
+    public HashMap<String, Integer> getDistinctTeams() {
+        HashMap<String, Integer> teams = new HashMap<> ();
+        Integer team_id;
+        String short_name;
+
+        String qry = "select distinct TeamID, ShortName from v_team order by ShortName";
+        try {
+            ResultSet rs = conn.createStatement().executeQuery(qry);
+            while (rs.next()) {
+                team_id = rs.getInt("TeamID");
+                short_name = rs.getString("ShortName");
+                teams.put(short_name, team_id);
+            }
+
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return teams;
+    }
+
+    public String[] getDistinctStates() {
+        ArrayList<String> states = new ArrayList<>();
+
+        String qry = "select distinct State from Location order by State";
+        try {
+            ResultSet rs = conn.createStatement().executeQuery(qry);
+            while (rs.next()) {
+                states.add(rs.getString("State"));
+            }
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return  states.toArray(new String[0]);
+    }
+
 
     public ArrayList<Player> getPlayersByTeam(Integer teamID) {
         ArrayList<Player> players = new ArrayList<>();

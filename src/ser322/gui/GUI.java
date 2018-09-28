@@ -1,6 +1,7 @@
 package ser322.gui;
 
 
+import jdk.nashorn.internal.runtime.OptimisticReturnFilters;
 import ser322.backend.Query;
 
 import javax.swing.*;
@@ -8,8 +9,8 @@ import javax.swing.table.AbstractTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class GUI extends JPanel implements ActionListener {
@@ -81,22 +82,30 @@ public class GUI extends JPanel implements ActionListener {
                 break;
             }
             case "teams_by_state": {
-                queryParameter = getInputFromDiaglogBox("Enter state");
+                String[] states = query.getDistinctStates();
+                queryParameter = getInputFromDiaglogBox("Enter state of school for query..", states);
                 tableModel = new TeamTableModel(query.getTeamByState(queryParameter));
                 break;
             }
             case "coaches_by_team": {
-                queryParameter = getInputFromDiaglogBox("Enter team id");
-                tableModel = new CoachTableModel(query.getCoachesByTeam(Integer.parseInt(queryParameter)));
+                HashMap<String, Integer> team_id_lookup = query.getDistinctTeams();
+                queryParameter = getInputFromDiaglogBox("Select team name to view coaches..", (String[]) team_id_lookup.keySet().toArray());
+                System.out.println(queryParameter);
+                Integer team_id = team_id_lookup.get(queryParameter);
+                tableModel = new CoachTableModel(query.getCoachesByTeam(team_id));
                 break;
             }
             case "players_by_team": {
-                queryParameter = getInputFromDiaglogBox("Enter team id");
-                tableModel = new PlayerTableModel(query.getPlayersByTeam(Integer.parseInt(queryParameter)));
+                HashMap<String, Integer> team_id_lookup = query.getDistinctTeams();
+                queryParameter = getInputFromDiaglogBox("Select team name to view players..", (String[]) team_id_lookup.keySet().toArray());
+                System.out.println(queryParameter);
+                Integer team_id = team_id_lookup.get(queryParameter);
+                tableModel = new PlayerTableModel(query.getPlayersByTeam(team_id));
                 break;
             }
             case "players_by_state": {
-                queryParameter = getInputFromDiaglogBox("Enter state");
+                String[] states = query.getDistinctStates();
+                queryParameter = getInputFromDiaglogBox("Enter home state of players for query..", states);
                 tableModel = new PlayerTableModel(query.getPlayersByState(queryParameter));
                 break;
             }
@@ -114,6 +123,18 @@ public class GUI extends JPanel implements ActionListener {
                 null,
                 null,
                 "type here...");
+    }
+
+
+    private String getInputFromDiaglogBox(String message, String[] possibilities) {
+        return (String)JOptionPane.showInputDialog(
+                this,
+                message,
+                "Choose value for query..",
+                JOptionPane.PLAIN_MESSAGE,
+                null,
+                (String[]) possibilities,
+                (String) possibilities[0]);
     }
 
 
