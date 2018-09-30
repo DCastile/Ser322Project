@@ -11,7 +11,7 @@ public class Test {
         ArrayList<Object> objects;
 
         System.out.println("Printing all ASU Players:");
-        printObjects(query.getPlayersByTeam(1));
+        printObjects(query.getPlayersByTeam("ASU"));
 
         System.out.println("\n\n\n\n");
         System.out.println("Printing all players from California:");
@@ -20,7 +20,7 @@ public class Test {
 
         System.out.println("\n\n\n\n");
         System.out.println("Printing all ASU Coaches:");
-        printObjects(query.getCoachesByTeam(1));
+        printObjects(query.getCoachesByTeam("ASU"));
 
         System.out.println("\n\n\n\n");
         System.out.println("Printing all Teams:");

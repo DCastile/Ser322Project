@@ -82,29 +82,27 @@ public class GUI extends JPanel implements ActionListener {
                 break;
             }
             case "teams_by_state": {
-                String[] states = query.getDistinctStates();
+                String[] states = query.getDistinctStates("team");
                 queryParameter = getInputFromDiaglogBox("Enter state of school for query..", states);
                 tableModel = new TeamTableModel(query.getTeamByState(queryParameter));
                 break;
             }
             case "coaches_by_team": {
-                HashMap<String, Integer> team_id_lookup = query.getDistinctTeams();
-                queryParameter = getInputFromDiaglogBox("Select team name to view coaches..", (String[]) team_id_lookup.keySet().toArray());
+                String[] teams = query.getDistinctTeams();
+                queryParameter = getInputFromDiaglogBox("Select team name to view coaches..", teams);
                 System.out.println(queryParameter);
-                Integer team_id = team_id_lookup.get(queryParameter);
-                tableModel = new CoachTableModel(query.getCoachesByTeam(team_id));
+                tableModel = new CoachTableModel(query.getCoachesByTeam(queryParameter));
                 break;
             }
             case "players_by_team": {
-                HashMap<String, Integer> team_id_lookup = query.getDistinctTeams();
-                queryParameter = getInputFromDiaglogBox("Select team name to view players..", (String[]) team_id_lookup.keySet().toArray());
+                String[] teams = query.getDistinctTeams();
+                queryParameter = getInputFromDiaglogBox("Select team name to view players..", teams);
                 System.out.println(queryParameter);
-                Integer team_id = team_id_lookup.get(queryParameter);
-                tableModel = new PlayerTableModel(query.getPlayersByTeam(team_id));
+                tableModel = new PlayerTableModel(query.getPlayersByTeam(queryParameter));
                 break;
             }
             case "players_by_state": {
-                String[] states = query.getDistinctStates();
+                String[] states = query.getDistinctStates("player");
                 queryParameter = getInputFromDiaglogBox("Enter home state of players for query..", states);
                 tableModel = new PlayerTableModel(query.getPlayersByState(queryParameter));
                 break;

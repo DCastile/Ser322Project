@@ -54,31 +54,38 @@ public class Query {
         return null;
     }
 
-    public HashMap<String, Integer> getDistinctTeams() {
-        HashMap<String, Integer> teams = new HashMap<> ();
-        Integer team_id;
-        String short_name;
+    public String[] getDistinctTeams() {
+        ArrayList<String> teams = new ArrayList<>();
 
-        String qry = "select distinct TeamID, ShortName from v_team order by ShortName";
+        String qry = "select distinct ShortName from v_team order by ShortName";
         try {
             ResultSet rs = conn.createStatement().executeQuery(qry);
             while (rs.next()) {
-                team_id = rs.getInt("TeamID");
-                short_name = rs.getString("ShortName");
-                teams.put(short_name, team_id);
+                teams.add(rs.getString("ShortName"));
             }
 
         }
         catch (SQLException e) {
             e.printStackTrace();
         }
-        return teams;
+        return teams.toArray(new String[0]);
     }
 
-    public String[] getDistinctStates() {
+    public String[] getDistinctStates(String type) {
         ArrayList<String> states = new ArrayList<>();
+        String qry;
+        switch (type) {
+            case "team": {
+                qry = "select distinct State from Location where LocationID in (select LocationID from Team) order by State";
+                break;
+            }
+            case "player": {
+                qry = "select distinct State from Location where LocationID in (select LocationID from Person) order by State";
+                break;
+            }
+            default: qry = "select distinct State from Location order by State";
+        }
 
-        String qry = "select distinct State from Location order by State";
         try {
             ResultSet rs = conn.createStatement().executeQuery(qry);
             while (rs.next()) {
@@ -92,13 +99,13 @@ public class Query {
     }
 
 
-    public ArrayList<Player> getPlayersByTeam(Integer teamID) {
+    public ArrayList<Player> getPlayersByTeam(String teamShortName) {
         ArrayList<Player> players = new ArrayList<>();
 
-        String qry = "select * from v_player where TeamID = ?";
+        String qry = "select * from v_player where Team = ?";
         try {
             PreparedStatement stmt = conn.prepareStatement(qry);
-            stmt.setInt(1, teamID);
+            stmt.setString(1, teamShortName);
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
@@ -150,13 +157,13 @@ public class Query {
         return null;
     }
 
-    public ArrayList<Coach> getCoachesByTeam(Integer teamID) {
+    public ArrayList<Coach> getCoachesByTeam(String teamShortName) {
         ArrayList<Coach> coaches = new ArrayList<>();
 
-        String qry = "select * from v_coach where TeamID = ?";
+        String qry = "select * from v_coach where Team = ?";
         try {
             PreparedStatement stmt = conn.prepareStatement(qry);
-            stmt.setInt(1, teamID);
+            stmt.setString(1, teamShortName);
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
